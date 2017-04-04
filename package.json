@@ -1,0 +1,23 @@
+{
+  "name": "leaflet-custom-projection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "watchify main.js -o public/script.js",
+    "make": "browserify main.js -o public/script.js",
+    "mini": "minifyjs -i public/script.js -o public/script.min.js -m",
+    "build": "npm run make && npm run mini"
+  },
+  "keywords": [
+    "Leaflet",
+    "custom",
+    "projection",
+    "CRS"
+  ],
+  "author": "idris-maps",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "leaflet": "^1.0.3"
+  }
+}
